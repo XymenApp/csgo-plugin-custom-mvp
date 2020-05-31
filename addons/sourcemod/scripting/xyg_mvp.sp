@@ -44,8 +44,8 @@ public void OnPluginStart(){
 	CreateConVar("sm_mvp_version", PLUGIN_VERSION, "Show the version of the plugin", FCVAR_SPONLY|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	RegConsoleCmd("sm_mvp", Command_MVP, "Select Your MVP Anthem");
 	RegConsoleCmd("sm_mvpvol", Command_MVPVol, "Select Your MVP Volume");
-	cookie_mvp_name = RegClientCookie("mvp_name", "Player's MVP Anthem", CookieAccess_Private);
-	cookie_mvp_vol = RegClientCookie("mvp_vol", "Player MVP volume", CookieAccess_Private);
+	cookie_mvp_name = RegClientCookie("mvpname", "Player's MVP Anthem", CookieAccess_Private);
+	cookie_mvp_vol = RegClientCookie("mvpvol", "Player MVP volume", CookieAccess_Private);
 	g_defaultVolCvar = CreateConVar("sm_mvp_vol_default", "0.4", "Default volume for all music kit sounds");
 	g_defaultMVPCvar = CreateConVar("sm_mvp_default", "1", "Default index of music kit for all players");
 	g_tagCvar = CreateConVar("sm_mvp_tag", "-=XymenGaming=-", "Default index of music kit for all players");
